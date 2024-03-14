@@ -7,7 +7,8 @@ export const connectToDb = async () => {
     await mongoose.connect(`mongodb://${baseUrl}/book`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-    });
+      });
+      // new comment added
     console.log("MongoDB connected using mongoose");
   } catch (err) {
     console.log(err);
